@@ -1,15 +1,27 @@
 ```ts
 // emp-config.ts
 
-import { rawLoaderPlugin } from 'raw-loader-emp';
+import { empRawPlugin } from 'raw-loader-plugin';
 
 export default {
     // ...其他配置信息...
     plugins: [
-        rawLoaderPlugin(),
+        empRawPlugin(),
     ],
 };
 
+```
+
+```ts
+// webpack.config.js
+import {  webpackRawPlugin } from 'raw-loader-plugin';
+
+export default {
+    // ...其他配置信息...
+    plugins: [
+       new webpackRawPlugin(),
+    ],
+};
 ```
 
 ```ts
@@ -18,5 +30,5 @@ declare const rawLoaderOptions: {
     test?: RegExp;
     resourceQuery?: RegExp;
 };
-rawLoaderPlugin(options?: rawLoaderOptions);
+empRawPlugin(options?: rawLoaderOptions);
 ```

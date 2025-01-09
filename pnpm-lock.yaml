@@ -11,9 +11,15 @@ importers:
       '@empjs/cli':
         specifier: ^3.1.11
         version: 3.5.0(@types/express@4.17.21)(less@4.2.1)(sass@1.83.1)(typescript@5.7.3)(webpack@5.97.1)
+      '@types/node':
+        specifier: ^22.10.5
+        version: 22.10.5
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
+      webpack:
+        specifier: ^5.97.1
+        version: 5.97.1
 
 packages:
 
