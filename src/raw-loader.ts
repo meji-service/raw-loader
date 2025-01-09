@@ -1,6 +1,6 @@
 
 export default function rawLoader(source) {
-  const { mode } = this.getOptions();
+  const { mode = 'raw' } = this.getOptions() ?? {};
   switch(mode) {
     case 'raw':
       return source;
@@ -13,7 +13,6 @@ export default function rawLoader(source) {
     default:
       throw new Error(`Invalid mode "${mode}"`);
   }
-
 }
 
 function toStringify(source) {

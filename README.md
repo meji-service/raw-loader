@@ -1,3 +1,5 @@
+
+### @emp/cli
 ```ts
 // emp-config.ts
 
@@ -12,15 +14,42 @@ export default {
 
 ```
 
+### webpack
+- 第一张方法
 ```ts
 // webpack.config.js
-import {  webpackRawPlugin } from 'raw-loader-plugin';
+import { webpackRawPlugin } from 'raw-loader-plugin';
 
 export default {
     // ...其他配置信息...
     plugins: [
        new webpackRawPlugin(),
     ],
+};
+```
+
+- 第二种方法
+```ts
+// webpack.config.js
+
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.svg$/i,
+        type: 'asset/source',
+        resourceQuery: /\?raw/,
+        use: [
+          {
+            loader: require.resolve('raw-loader-plugin/dist/raw-loader.js'),
+            options: {
+              mode: 'raw',
+            },
+          },
+        ],
+      },
+    ],
+  },
 };
 ```
 
