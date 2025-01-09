@@ -1,0 +1,31 @@
+{
+  "name": "raw-loader-emp",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "npx tsc --watch",
+    "build": "npx tsc"
+  },
+  "keywords": [
+    "webpack",
+    "emp",
+    "raw-loader"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/meji-service/raw-loader.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@empjs/cli": "^3.1.11",
+    "typescript": "^5.7.3"
+  }
+}

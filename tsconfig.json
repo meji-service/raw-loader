@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "declarationDir": "./dist",
+    "target": "es2017",
+    "sourceMap": false,
+    "declarationMap": false,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "incremental": true,
+    "tsBuildInfoFile": "./tsbuildinfo.json",
+    "skipLibCheck": true,
+    "paths": {
+
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+   ]
+}
