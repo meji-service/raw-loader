@@ -1,7 +1,7 @@
 {
   "name": "raw-loader-plugin",
   "version": "0.1.0",
-  "description": "",
+  "description": "webpack、emp、raw-loader、plugin",
   "main": "dist/index.js",
   "scripts": {
     "dev": "npx tsc --watch",
